@@ -1,1 +1,1 @@
-![alt text](img/example.jpg)
+![alt text](https://sun1-18.userapi.com/jIaCyFkaqwBon3JQ6_k5zV-YLb9hh4PlDczEdA/wy00h6jpSmM.jpg)
