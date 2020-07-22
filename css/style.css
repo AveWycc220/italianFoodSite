@@ -1,4 +1,42 @@
-body {
-  color: white; }
+* {
+  margin: 0; }
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  height: 100px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2pt;
+  color: #ffffff;
+  text-align: right; }
+  .menu .menu_home {
+    padding-right: 60px;
+    padding-top: 70px; }
+  .menu .menu_menu {
+    padding-right: 60px;
+    padding-top: 70px; }
+  .menu .menu_our-story {
+    padding-right: 60px;
+    padding-top: 70px; }
+  .menu .menu_contact-us {
+    padding-right: 60px;
+    padding-top: 70px; }
+  .menu .menu_form {
+    padding-right: 60px;
+    padding-top: 70px;
+    padding-top: 55px; }
+  .menu .search-form {
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: black;
+    width: 180px;
+    height: 50px; }
+
+.header {
+  background: url("../img/header/header_bg.jpg") no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh; }
 
 /*# sourceMappingURL=style.css.map */
