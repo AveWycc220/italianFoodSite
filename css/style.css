@@ -1,14 +1,19 @@
+@font-face {
+  font-family: Reey Regular;
+  src: url(../fonts/reey_regular.otf); }
+
 * {
-  margin: 0; }
+  margin: 0;
+  color: #ffffff; }
 
 .menu {
   display: flex;
   justify-content: flex-end;
   height: 100px;
+  font-size: 12pt;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   letter-spacing: 2pt;
-  color: #ffffff;
   text-align: right; }
   .menu .menu_home {
     padding-right: 60px;
@@ -32,11 +37,40 @@
     color: black;
     width: 180px;
     height: 50px; }
+    .menu .search-form .search-image {
+      padding-top: 11px;
+      padding-right: 20px; }
+  .menu .link-menu {
+    color: inherit;
+    text-decoration: none; }
+    .menu .link-menu:hover {
+      transition: color .5s linear;
+      color: #cccccc; }
+
+.left-bottom-header {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif; }
+  .left-bottom-header .title {
+    font-family: 'Reey Regular', 'Open Sans', sans-serif;
+    font-size: 84pt;
+    padding-left: 90px;
+    padding-top: 40px; }
+  .left-bottom-header .img {
+    padding-top: 100px;
+    padding-left: 100px; }
+  .left-bottom-header .subtitle {
+    padding-top: 100px;
+    padding-left: 100px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18pt;
+    letter-spacing: 4pt; }
 
 .header {
   background: url("../img/header/header_bg.jpg") no-repeat;
   background-size: 100%;
   width: 100%;
-  height: 100vh; }
+  height: 1056px; }
 
 /*# sourceMappingURL=style.css.map */
