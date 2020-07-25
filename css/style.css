@@ -53,14 +53,20 @@
       transition: color .5s linear;
       color: #b6b6b9; }
 
+.bottom-header {
+  display: flex;
+  flex-direction: row;
+  height: 90.5303%; }
+
 .left-bottom-header {
   display: flex;
   flex-direction: column;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  width: 47.15278%; }
   .left-bottom-header .title {
     font-family: 'Reey Regular', 'Open Sans', sans-serif;
     font-size: 6vw;
-    padding-left: 90px;
+    padding-left: 100px;
     padding-top: 40px; }
   .left-bottom-header .img {
     padding-top: 100px;
@@ -98,12 +104,41 @@
         transition: color .5s linear;
         color: black; }
   .left-bottom-header .text {
-    width: 34.375%;
+    width: 73.52941%;
     height: 70px;
     letter-spacing: 1pt;
     font-size: 1.35vw;
     font-style: italic;
     padding-top: 25px;
     padding-left: 100px; }
+
+.right-bottom-header {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  width: 52.77778%;
+  height: 1110px; }
+  .right-bottom-header .img-plate {
+    padding-top: 160px;
+    padding-left: 85px; }
+    .right-bottom-header .img-plate .plate {
+      width: 44.7vw;
+      height: 44.7vw; }
+  .right-bottom-header .img-sauce {
+    position: absolute;
+    top: 55.85586%;
+    right: 65.78947%; }
+    .right-bottom-header .img-sauce .sauce {
+      width: 20vw;
+      height: 21vw; }
+  .right-bottom-header .img-foliage {
+    position: absolute;
+    top: 55.40541%;
+    left: 35.52632%; }
+    .right-bottom-header .img-foliage .foliage {
+      width: 38vw;
+      height: 32vw; }
 
 /*# sourceMappingURL=style.css.map */
