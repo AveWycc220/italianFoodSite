@@ -13,13 +13,17 @@
     @media only screen and (min-width: 1025px) {
         &:hover {
             cursor: pointer;
-            transition: background-color .5s linear;
+            transition: background-color .2s linear;
             background-color: darken($bg-color, 20%);
+        }
+
+        &:active {
+            background-color: darken($bg-color, 50%);
         }
     }
     @media only screen and (max-width: 1025px) {
         &:active {
             background-color: darken($bg-color, 20%);
-        }
+        } 
     }
 }
