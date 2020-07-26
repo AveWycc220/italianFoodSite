@@ -112,6 +112,10 @@
         }
         @media only screen and (max-width: 570px) {
             padding-top: 10px;
+            & .img_logo {
+                width: 106px;
+                height: 79px;
+            }
         }
     }
 
@@ -148,19 +152,23 @@
         }
         margin-top: 60px;
         margin-left: 100px;
-        &,
-        &:active,
-        &:focus {
-            border: none;
-            outline: none;  
-            user-select: none;
+        border: none;
+        outline: none;  
+        user-select: none;
+
+        @media only screen and (min-width: 1025px) {
+            &:hover {
+                cursor: pointer;
+                transition: background-color .5s linear;
+                background-color: darken($font-color-white, 20%);
+            }
         }
-        &:hover {
-            cursor: pointer;
-            transition: background-color .5s linear;
-            background-color: darken($font-color-white, 20%);
+        @media only screen and (max-width: 1025px) {
+            &:active {
+                transition: background-color .5s linear;
+                background-color: darken($font-color-white, 20%);
+            }
         }
-        
 
         & .text_btn_read_more {
             color: inherit;
@@ -291,7 +299,13 @@
         }
         top: 615px / 1110px * 100%;
         left: 270px / 760px * 100%;
-        @media only screen and (max-width: 1170px), (min-width: 1650px) {
+        @media only screen and (max-width: 1190px){
+            top: 515px / 1110px * 100%;
+        }
+        @media only screen and (max-width: 930px){
+            top: 415px / 1110px * 100%;
+        }
+        @media only screen and (max-width: 870px), (min-width: 1650px) {
             display: none;
         }
     }
