@@ -2,10 +2,6 @@
   font-family: Reey Regular;
   src: url(../fonts/reey_regular.otf); }
 
-* {
-  margin: 0;
-  color: #eaeaeb; }
-
 .header {
   background: url("../img/header/header_bg.jpg") top center;
   background-size: cover;
@@ -277,5 +273,9 @@
     @media only screen and (max-width: 1170px), (min-width: 1650px) {
       .right-bottom-header .img-foliage {
         display: none; } }
+
+* {
+  margin: 0;
+  color: #eaeaeb; }
 
 /*# sourceMappingURL=style.css.map */
