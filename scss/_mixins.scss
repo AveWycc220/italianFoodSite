@@ -9,3 +9,17 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+@mixin btn_used ($bg-color) {
+    @media only screen and (min-width: 1025px) {
+        &:hover {
+            cursor: pointer;
+            transition: background-color .5s linear;
+            background-color: darken($bg-color, 20%);
+        }
+    }
+    @media only screen and (max-width: 1025px) {
+        &:active {
+            background-color: darken($bg-color, 20%);
+        }
+    }
+}
