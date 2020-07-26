@@ -19,6 +19,20 @@
     justify-content: flex-end;
     height: 100px;
     font-size: $font-size;
+    @media only screen and (min-width: 1850px) {
+        font-size: $font-size-large;
+    }
+    @media only screen and (max-width: 1300px) {
+        font-size: $font-size-laptop;
+    }
+    @media only screen and (max-width: 870px) {
+        font-size: $font-size-tablet;
+    }
+    @media only screen and (max-width: 810px) {
+        & .link-menu {
+            display: none;
+        }
+    }
     font-family: $font;
     font-weight: bold;
     letter-spacing: 2pt;
@@ -63,15 +77,51 @@
     flex-direction: column;
     font-family: $font;
     width: 679px / 1440px * 100%;
+    @media only screen and (max-width: 870px) {
+        width: 1110px / 1440px * 100%;
+    }
+    @media only screen and (max-width: 570px) {
+        width: 1440px / 1440px * 100%;    
+        align-items: center;
+        justify-content: center;
+    }
     & .title {
         font-family: 'Reey Regular', 'Open Sans', sans-serif;
         font-size: 6 * $font-size;
         padding-left: 100px;
         padding-top: 40px;
+        @media only screen and (min-width: 1850px) {
+            font-size: 6 * $font-size-large;
+        }
+        @media only screen and (max-width: 870px) {
+            font-size: 6 * $font-size-tablet;
+        }
+        @media only screen and (max-width: 700px) {
+            font-size: 6 * $font-size-mobile;
+        }
+        @media only screen and (max-width: 560px) {
+            font-size: 6 * $font-size-mobile-small;
+        }
     }
     & .img {
         padding-top: 100px;
         padding-left: 100px;
+        @media only screen and (min-width: 1850px) {
+            & .img_logo {
+                width: 166px;
+                height: 139px;
+                padding-top: 30px;
+            }
+        }
+        @media only screen and (max-width: 1300px) {
+            & .img_logo {
+                width: 126px;
+                height: 99px;
+            }
+        }
+        @media only screen and (max-width: 570px) {
+            padding-top: 10px;
+        }
     }
 
     & .subtitle {
@@ -80,11 +130,31 @@
         font-weight: bold;
         font-style: italic;
         font-size: 1.5 * $font-size;
+        @media only screen and (min-width: 1850px) {
+            font-size: 1.5 * $font-size-large;
+            padding-top: 80px;
+        }
+        @media only screen and (max-width: 1300px) {
+            font-size: 1.5 * $font-size-laptop;
+        }
+        @media only screen and (max-width: 870px) {
+            font-size: 1.5 * $font-size-tablet;
+        }
+        @media only screen and (max-width: 700px) {
+            font-size: 1.5 * $font-size-mobile;
+        }
+        @media only screen and (max-width: 560px) {
+            font-size: 2 * $font-size-mobile-small;
+        }
         letter-spacing: 4pt;
     }
 
     & .btn_read_more {
         @include btn(218px, 47px, $font-color-white, $font-color-black);
+        @media only screen and (min-width: 1850px) {
+            @include btn(228px, 57px, $font-color-white, $font-color-black);
+            margin-top: 20px;
+        }
         margin-top: 60px;
         margin-left: 100px;
         &,
@@ -107,6 +177,12 @@
             text-decoration: none;
             margin: auto;
             font-size: $font-size-button;
+            @media only screen and (min-width: 1850px) {
+                font-size: 1.1 * $font-size-button;
+            }
+            @media only screen and (max-width: 1300px) {
+                font-size: 1.2 * $font-size-button;
+            }
 
             &:hover {
                 transition: color .5s linear;
@@ -123,6 +199,33 @@
         font-style: italic;
         padding-top: 25px;
         padding-left: 100px;
+        @media only screen and (min-width: 1850px) {
+            font-size: 1.35 * $font-size-large;
+            padding-top: 5px;
+        }
+        @media only screen and (max-width: 1300px) {
+            font-size: 1.35 * $font-size-laptop;
+        }
+        @media only screen and (max-width: 870px) {
+            font-size: 1.35 * $font-size-tablet;
+        }
+        @media only screen and (max-width: 700px) {
+            font-size: 1.35 * $font-size-mobile;
+        }
+        @media only screen and (max-width: 560px) {
+            font-size: 2 * $font-size-mobile-small;
+        }
+    }
+    @media only screen and (max-width: 570px) {
+        @each $element in title, img, subtitle, btn_read_more, text {
+            & .#{$element} {
+                @if $element == btn_read_more {
+                    margin-left: 0;
+                } @else {
+                    padding-left: 0;
+                }
+            }
+        }
     }
 }
 
@@ -133,14 +236,34 @@
     align-items: flex-end;
     position: relative;
     width: 760px / 1440px * 100%;
+    @media only screen and (max-width: 870px) {
+        width: 330px / 1440px * 100%;
+    }
+    @media only screen and (max-width: 570px) {
+        width: 0px / 1440px * 100%;
+    }
     height: 1110px;
     & .img-plate {
+        position: absolute;
         & .plate {
             width: 44.7vw;
             height: 44.7vw;
         }
-        padding-top: 160px;
-        padding-left: 85px;
+        top: 150px / 1110px * 100%;
+        right: 35px / 760px * 100%;
+        @media only screen and (min-width: 1850px) {
+            & .plate {
+                width: 31.7vw;
+                height: 31.7vw;
+            }
+            right: 70px / 760px * 100%;
+        }
+        @media only screen and (max-width: 870px) {
+            right: -310px / 330px * 100%;
+        }
+        @media only screen and (max-width: 570px) {
+            display: none;
+        }
     }
 
     & .img-sauce {
@@ -151,6 +274,22 @@
         }
         top: 620px / 1110px * 100%;
         right: 500px / 760px * 100%;
+        @media only screen and (min-width: 1850px) {
+            & .sauce {
+                width: 12vw;
+                height: 13vw;
+            }
+        }
+        @media only screen and (max-width: 1170px) {
+            top: 520px / 1110px * 100%;
+        }
+        @media only screen and (max-width: 870px) {
+            right: -30px / 330px * 100%;
+            top: 470px / 1110px * 100%;
+        }
+        @media only screen and (max-width: 570px) {
+            display: none;
+        }
     }
 
     & .img-foliage {
@@ -161,5 +300,8 @@
         }
         top: 615px / 1110px * 100%;
         left: 270px / 760px * 100%;
+        @media only screen and (max-width: 1170px), (min-width: 1650px) {
+            display: none;
+        }
     }
 } 
