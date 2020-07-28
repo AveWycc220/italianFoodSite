@@ -204,9 +204,9 @@
         }
     }
     @media only screen and (max-width: 570px) {
-        @each $element in title, img, subtitle, btn_read_more, text {
+        @each $element in title, img, subtitle, btn-read-more, text {
             & .#{$element} {
-                @if $element == btn_read_more {
+                @if $element == btn-read-more {
                     margin-left: 0;
                 } @else {
                     padding-left: 0;
@@ -245,9 +245,6 @@
             }
             right: 70px / 760px * 100%;
         }
-        /* @media only screen and (max-width: 1600px) {
-            background: url('#{path_img}resized/mobile/compressed/header/plate.png') no-repeat;
-        } */
         @media only screen and (max-width: 870px) {
             right: -310px / 330px * 100%;
         }

@@ -312,7 +312,7 @@ table {
       padding-left: 0; }
     .left-bottom-header .subtitle {
       padding-left: 0; }
-    .left-bottom-header .btn_read_more {
+    .left-bottom-header .btn-read-more {
       margin-left: 0; }
     .left-bottom-header .text {
       padding-left: 0; } }
@@ -334,10 +334,7 @@ table {
   .right-bottom-header .img-plate {
     position: absolute;
     top: 13.51351%;
-    right: 4.60526%;
-    /* @media only screen and (max-width: 1600px) {
-            background: url('path_imgresized/mobile/compressed/header/plate.png') no-repeat;
-        } */ }
+    right: 4.60526%; }
     .right-bottom-header .img-plate .plate {
       width: 44.7vw;
       height: 44.7vw; }
