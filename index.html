@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+    <link rel="shortcut icon" href="img/compressed/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/compressed/icon.png">
     <title>Italian Food</title>
+    <meta name="description" content="Site for Italian Food restaurant">
 </head>
 <body>
     <header class="header">
@@ -30,7 +33,7 @@
         <div class="bottom-header">
             <div class="left-bottom-header">
                 <div class="img">
-                    <img src="img/header/place_your_logo_here.png" alt="logo" class="img_logo">
+                    <img src="img/compressed/header/place_your_logo_here.png" alt="logo" class="img_logo">
                 </div>
                 <div class="title">
                     Italian Food
@@ -47,13 +50,19 @@
             </div>
             <div class="right-bottom-header">
                 <div class="img-plate">
-                    <img src="img/header/plate.png" alt="plate" class="plate">
+                    <picture>
+                        <source media="(max-width: 1000px)"
+                            srcset="img/resized/min/compressed/header/plate.png" class="plate">
+                        <source media="(min-width: 1960px)"
+                            srcset="img/resized/tablet/compressed/header/plate.png" class="plate">   
+                        <img src="img/resized/mobile/compressed/header/plate.png" alt="plate" class="plate">
+                    </picture>
                 </div>
                 <div class="img-sauce">
-                     <img src="img/header/sauce.png" alt="sauce" class="sauce">
+                    <img src="img/resized/tablet/compressed/header/sauce.png" alt="sauce" class="sauce">
                 </div>
                 <div class="img-foliage">
-                     <img src="img/header/foliage.png" alt="foliage" class="foliage">
+                     <img src="img/resized/tablet/compressed/header/foliage.png" alt="foliage" class="foliage">
                 </div>
             </div>
         </div>

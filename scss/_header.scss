@@ -144,7 +144,7 @@
         letter-spacing: 4pt;
     }
 
-    & .btn_read_more {
+    & .btn-read-more {
         @include btn(218px, 47px, $font-color-white, $font-color-black);
         @media only screen and (min-width: 1850px) {
             @include btn(228px, 57px, $font-color-white, $font-color-black);
@@ -156,21 +156,9 @@
         outline: none;  
         user-select: none;
 
-        @media only screen and (min-width: 1025px) {
-            &:hover {
-                cursor: pointer;
-                transition: background-color .5s linear;
-                background-color: darken($font-color-white, 20%);
-            }
-        }
-        @media only screen and (max-width: 1025px) {
-            &:active {
-                transition: background-color .5s linear;
-                background-color: darken($font-color-white, 20%);
-            }
-        }
+        @include btn_used($font-color-white);
 
-        & .text_btn_read_more {
+        & .text-btn-read-more {
             color: inherit;
             font-weight: 800;
             text-decoration: none;
@@ -257,6 +245,9 @@
             }
             right: 70px / 760px * 100%;
         }
+        /* @media only screen and (max-width: 1600px) {
+            background: url('#{path_img}resized/mobile/compressed/header/plate.png') no-repeat;
+        } */
         @media only screen and (max-width: 870px) {
             right: -310px / 330px * 100%;
         }
