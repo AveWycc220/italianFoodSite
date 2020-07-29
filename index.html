@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <style> @import url("css/critical.css"); </style>
     <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="css/style.css"></noscript>
     <link rel="shortcut icon" href="img/compressed/icon.png" type="image/png">
@@ -42,7 +43,7 @@
                     LOREMIPSUM DOLOR
                 </div>
                 <button class="btn-read-more">
-                    <span class="text-btn-read-more">READ MORE<span>
+                    <span class="text-btn-read-more">READ MORE</span>
                 </button>
                 <div class="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna.
@@ -51,18 +52,18 @@
             <div class="right-bottom-header">
                 <div class="img-plate">
                     <picture>
-                        <source media="(max-width: 1000px)"
-                            srcset="img/resized/min/compressed/header/plate.png" class="plate">
+                        <source media="(max-width: 800px)"
+                            srcset="img/resized/min/compressed/header/plate.png"  loading="lazy" class="plate">
                         <source media="(min-width: 1960px)"
-                            srcset="img/resized/tablet/compressed/header/plate.png" class="plate">   
-                        <img src="img/resized/mobile/compressed/header/plate.png" alt="plate" class="plate">
+                            srcset="img/resized/tablet/compressed/header/plate.png" loading="lazy" class="plate">   
+                        <img src="img/resized/mobile/compressed/header/plate.png" alt="plate" loading="lazy" class="plate">
                     </picture>
                 </div>
                 <div class="img-sauce">
-                    <img src="img/resized/tablet/compressed/header/sauce.png" alt="sauce" class="sauce">
+                    <img src="img/resized/tablet/compressed/header/sauce.png" alt="sauce" loading="lazy" class="sauce">
                 </div>
                 <div class="img-foliage">
-                     <img src="img/resized/tablet/compressed/header/foliage.png" alt="foliage" class="foliage">
+                     <img src="img/resized/tablet/compressed/header/foliage.png" alt="foliage" loading="lazy" class="foliage">
                 </div>
             </div>
         </div>
