@@ -9,7 +9,7 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-@mixin btn_used ($bg-color) {
+@mixin btn_used_darken ($bg-color) {
     @media only screen and (min-width: 1025px) {
         &:hover {
             cursor: pointer;
@@ -24,6 +24,25 @@
     @media only screen and (max-width: 1025px) {
         &:active {
             background-color: darken($bg-color, 20%);
+        } 
+    }
+}
+
+@mixin btn_used_lighten ($bg-color) {
+    @media only screen and (min-width: 1025px) {
+        &:hover {
+            cursor: pointer;
+            transition: background-color .2s linear;
+            background-color: lighten($bg-color, 20%);
+        }
+
+        &:active {
+            background-color: lighten($bg-color, 50%);
+        }
+    }
+    @media only screen and (max-width: 1025px) {
+        &:active {
+            background-color: lighten($bg-color, 20%);
         } 
     }
 }

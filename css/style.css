@@ -389,6 +389,99 @@ table {
       .right-bottom-header .img-foliage {
         display: none; } }
 
+.food-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 1116px;
+  padding-top: 70px; }
+  .food-menu .title .text-title {
+    font-family: 'Reey Regular', 'Open Sans', sans-serif;
+    font-size: 5vw;
+    color: #222328; }
+  .food-menu .subtitle {
+    padding-top: 70px;
+    padding-left: 30px;
+    width: 753px;
+    height: 94px; }
+    .food-menu .subtitle .text-subtitle {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.75vw;
+      color: #2e3034;
+      text-align: center; }
+  .food-menu .food-plates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 45px; }
+    .food-menu .food-plates .plate-1 {
+      padding-left: 120px;
+      width: 310px;
+      height: 570px; }
+    .food-menu .food-plates .plate-2 {
+      padding-left: 100px;
+      padding-right: 110px;
+      width: 310px;
+      height: 570px; }
+    .food-menu .food-plates .plate-3 {
+      padding-right: 120px;
+      width: 310px;
+      height: 570px; }
+    .food-menu .food-plates .img-plate {
+      width: 310px;
+      height: 310px;
+      border-radius: 50%;
+      -webkit-box-shadow: 0px 15px 5px 0px rgba(50, 50, 50, 0.15);
+      -moz-box-shadow: 0px 15px 5px 0px rgba(50, 50, 50, 0.15);
+      box-shadow: 0px 15px 5px 0px rgba(50, 50, 50, 0.15); }
+    .food-menu .food-plates .plate-title {
+      padding-top: 50px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      font-size: 2vw;
+      color: #2e3034; }
+    .food-menu .food-plates .plate-text {
+      padding-top: 25px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.62vw;
+      color: #2e3034; }
+  .food-menu .btn-show-more {
+    border-radius: 25px;
+    background-color: #2e3034;
+    color: #eaeaeb;
+    width: 335px;
+    height: 75px;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    user-select: none;
+    margin-top: 120x; }
+    @media only screen and (min-width: 1025px) {
+      .food-menu .btn-show-more:hover {
+        cursor: pointer;
+        transition: background-color .2s linear;
+        background-color: #5e626a; }
+      .food-menu .btn-show-more:active {
+        background-color: #acafb5; } }
+    @media only screen and (max-width: 1025px) {
+      .food-menu .btn-show-more:active {
+        background-color: #5e626a; } }
+    .food-menu .btn-show-more .text-btn-show-more {
+      color: inherit;
+      font-weight: 800;
+      letter-spacing: 4pt;
+      text-decoration: none;
+      margin: auto;
+      font-size: 20px; }
+      .food-menu .btn-show-more .text-btn-show-more:hover {
+        transition: color .5s linear;
+        color: white; }
+
 * {
   margin: 0;
   color: #eaeaeb; }

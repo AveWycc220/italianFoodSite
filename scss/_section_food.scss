@@ -1,0 +1,105 @@
+.food-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1116px;
+    padding-top: 70px;
+
+    & .title {
+        & .text-title {
+            font-family: 'Reey Regular', 'Open Sans', sans-serif;
+            font-size: 5 * $font-size;
+            color: $font-color-title-section;
+        }
+    }
+
+    & .subtitle {
+        padding-top: 70px;
+        padding-left: 30px;
+        width: 753px;
+        height: 94px;
+
+        & .text-subtitle {
+            font-family: $font;
+            font-size: 1.75 * $font-size;
+            color: $font-color-black;
+            text-align: center;
+        }
+    }
+
+    & .food-plates {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding-top: 45px;
+
+        & .plate-1 {
+            padding-left: 120px;
+            width: 310px;
+            height: 570px;
+        }
+
+        & .plate-2 {
+            padding-left: 100px;
+            padding-right: 110px;
+            width: 310px;
+            height: 570px;
+        }
+
+        & .plate-3 {
+            padding-right: 120px;
+            width: 310px;
+            height: 570px;
+        }
+
+        & .img-plate {
+            width: 310px;
+            height: 310px;
+            border-radius: 50%;
+            -webkit-box-shadow: 0px 15px 5px 0px rgba(50, 50, 50, 0.15);
+            -moz-box-shadow: 0px 15px 5px 0px rgba(50, 50, 50, 0.15);
+            box-shadow: 0px 15px 5px 0px rgba(50, 50, 50, 0.15);
+        }
+
+        & .plate-title {
+            padding-top: 50px;
+            font-family: $font;
+            font-weight: bold;
+            font-size: 2 * $font-size;
+            color: $font-color-black;
+        }
+
+        & .plate-text {
+            padding-top: 25px;
+            font-family: $font;
+            font-size: 1.62 * $font-size;
+            color: $font-color-black;
+        }
+    }
+
+    & .btn-show-more {
+        @include btn(335px, 75px, $font-color-black, $font-color-white);
+        border-radius: 40px;
+        border: none;
+        outline: none;  
+        user-select: none;
+        margin-top: 120x;
+
+        @include btn_used_lighten($font-color-black);
+
+        & .text-btn-show-more {
+            color: inherit;
+            font-weight: 800;
+            letter-spacing: 4pt;
+            text-decoration: none;
+            margin: auto;
+            font-size: $font-size-button;
+            &:hover {
+                transition: color .5s linear;
+                color: lighten($font-color-white, 20%);
+            }
+        }
+    }
+}

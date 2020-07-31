@@ -149,7 +149,7 @@
         outline: none;  
         user-select: none;
 
-        @include btn_used($font-color-white);
+        @include btn_used_darken($font-color-white);
 
         & .text-btn-read-more {
             color: inherit;
