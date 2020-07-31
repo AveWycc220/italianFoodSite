@@ -299,7 +299,7 @@ table {
         font-size: 1.62vw; } }
     @media only screen and (max-width: 870px) {
       .left-bottom-header .text {
-        font-size: 2.025vw; } }
+        font-size: 2.475vw; } }
     @media only screen and (max-width: 700px) {
       .left-bottom-header .text {
         font-size: 2.2275vw; } }
@@ -396,20 +396,61 @@ table {
   width: 100%;
   height: 1116px;
   padding-top: 70px; }
+  @media only screen and (min-width: 1850px) {
+    .food-menu {
+      height: 1316px;
+      padding-top: 90px; } }
+  @media only screen and (max-width: 870px) {
+    .food-menu {
+      height: 2300px; } }
+  @media only screen and (max-width: 870px) {
+    .food-menu {
+      height: 2300px; } }
+  @media only screen and (max-width: 590px) {
+    .food-menu {
+      height: 2000px; } }
+  @media only screen and (max-width: 460px) {
+    .food-menu {
+      height: 1650px; } }
+  @media only screen and (max-width: 375px) {
+    .food-menu {
+      height: 1450px; } }
   .food-menu .title .text-title {
     font-family: 'Reey Regular', 'Open Sans', sans-serif;
     font-size: 5vw;
     color: #222328; }
+  @media only screen and (max-width: 1200px) {
+    .food-menu .title .text-title {
+      font-size: 6.5vw; } }
+  @media only screen and (max-width: 870px) {
+    .food-menu .title .text-title {
+      font-size: 8.25vw; } }
+  @media only screen and (max-width: 560px) {
+    .food-menu .title .text-title {
+      font-size: 8.25vw; } }
   .food-menu .subtitle {
     padding-top: 70px;
     padding-left: 30px;
-    width: 753px;
-    height: 94px; }
+    width: 52.29167%;
+    height: 8.42294%; }
     .food-menu .subtitle .text-subtitle {
       font-family: "Open Sans", sans-serif;
       font-size: 1.75vw;
       color: #2e3034;
       text-align: center; }
+    @media only screen and (max-width: 1200px) {
+      .food-menu .subtitle .text-subtitle {
+        font-size: 2.5vw; } }
+    @media only screen and (max-width: 870px) {
+      .food-menu .subtitle {
+        width: 90%; }
+        .food-menu .subtitle .text-subtitle {
+          font-size: 3.75vw; } }
+    @media only screen and (max-width: 560px) {
+      .food-menu .subtitle {
+        width: 90%; }
+        .food-menu .subtitle .text-subtitle {
+          font-size: 5.875vw; } }
   .food-menu .food-plates {
     display: flex;
     flex-direction: row;
@@ -418,20 +459,20 @@ table {
     padding-top: 45px; }
     .food-menu .food-plates .plate-1 {
       padding-left: 120px;
-      width: 310px;
+      width: 21.52778%;
       height: 570px; }
     .food-menu .food-plates .plate-2 {
       padding-left: 100px;
       padding-right: 110px;
-      width: 310px;
+      width: 21.52778%;
       height: 570px; }
     .food-menu .food-plates .plate-3 {
       padding-right: 120px;
-      width: 310px;
+      width: 21.52778%;
       height: 570px; }
     .food-menu .food-plates .img-plate {
-      width: 310px;
-      height: 310px;
+      width: 95.38462%;
+      height: 20.5vw;
       border-radius: 50%;
       -webkit-box-shadow: 0px 15px 5px 0px rgba(50, 50, 50, 0.15);
       -moz-box-shadow: 0px 15px 5px 0px rgba(50, 50, 50, 0.15);
@@ -447,6 +488,103 @@ table {
       font-family: "Open Sans", sans-serif;
       font-size: 1.62vw;
       color: #2e3034; }
+    @media only screen and (max-width: 1200px) {
+      .food-menu .food-plates {
+        padding-right: 50px; }
+        .food-menu .food-plates .plate-1 {
+          padding: 0;
+          width: 25%;
+          height: 570px; }
+          .food-menu .food-plates .plate-1 .img-plate {
+            width: 123.07692%;
+            height: 24.5vw; }
+        .food-menu .food-plates .plate-2 {
+          padding: 0;
+          width: 25%;
+          height: 570px; }
+          .food-menu .food-plates .plate-2 .img-plate {
+            width: 123.07692%;
+            height: 24.5vw; }
+        .food-menu .food-plates .plate-3 {
+          padding: 0;
+          width: 25%;
+          height: 570px; }
+          .food-menu .food-plates .plate-3 .img-plate {
+            width: 123.07692%;
+            height: 24.5vw; }
+        .food-menu .food-plates .plate-title {
+          font-size: 3vw; }
+        .food-menu .food-plates .plate-text {
+          font-size: 2.1vw; } }
+    @media only screen and (max-width: 870px) {
+      .food-menu .food-plates {
+        padding-right: 20px;
+        flex-direction: column;
+        align-items: center; }
+        .food-menu .food-plates .plate-1 {
+          padding: 0;
+          width: 41.66667%;
+          height: 570px; }
+          .food-menu .food-plates .plate-1 .img-plate {
+            width: 123.07692%;
+            height: 46.5vw; }
+        .food-menu .food-plates .plate-2 {
+          padding: 0;
+          width: 41.66667%;
+          height: 570px; }
+          .food-menu .food-plates .plate-2 .img-plate {
+            width: 123.07692%;
+            height: 46.5vw; }
+        .food-menu .food-plates .plate-3 {
+          padding: 0;
+          width: 41.66667%;
+          height: 570px; }
+          .food-menu .food-plates .plate-3 .img-plate {
+            width: 123.07692%;
+            height: 46.5vw; }
+        .food-menu .food-plates .plate-title {
+          font-size: 4.5vw; }
+        .food-menu .food-plates .plate-text {
+          font-size: 3.15vw; } }
+    @media only screen and (max-width: 750px) {
+      .food-menu .food-plates .plate-1 {
+        height: 72vw; }
+      .food-menu .food-plates .plate-2 {
+        height: 72vw; }
+      .food-menu .food-plates .plate-3 {
+        height: 72vw; } }
+    @media only screen and (max-width: 560px) {
+      .food-menu .food-plates {
+        padding-right: 0px;
+        align-items: center; }
+        .food-menu .food-plates .plate-1 {
+          width: 76.38889%;
+          height: 100vw; }
+          .food-menu .food-plates .plate-1 .img-plate {
+            margin-left: 2vw;
+            width: 76.38889%;
+            height: 57vw; }
+        .food-menu .food-plates .plate-2 {
+          width: 76.38889%;
+          height: 100vw; }
+          .food-menu .food-plates .plate-2 .img-plate {
+            margin-left: 2vw;
+            width: 76.38889%;
+            height: 57vw; }
+        .food-menu .food-plates .plate-3 {
+          width: 76.38889%;
+          height: 100vw; }
+          .food-menu .food-plates .plate-3 .img-plate {
+            margin-left: 2vw;
+            width: 76.38889%;
+            height: 57vw; }
+        .food-menu .food-plates .plate-title {
+          font-size: 7.05vw; }
+        .food-menu .food-plates .plate-text {
+          font-size: 4.935vw; } }
+    @media only screen and (max-width: 560px) {
+      .food-menu .food-plates {
+        padding-top: 5px; } }
   .food-menu .btn-show-more {
     border-radius: 25px;
     background-color: #2e3034;
@@ -460,7 +598,7 @@ table {
     border: none;
     outline: none;
     user-select: none;
-    margin-top: 120x; }
+    margin-top: 25px; }
     @media only screen and (min-width: 1025px) {
       .food-menu .btn-show-more:hover {
         cursor: pointer;
@@ -481,6 +619,53 @@ table {
       .food-menu .btn-show-more .text-btn-show-more:hover {
         transition: color .5s linear;
         color: white; }
+    @media only screen and (max-width: 1200px) {
+      .food-menu .btn-show-more {
+        margin-top: 60px;
+        font-size: 26px; } }
+    @media only screen and (min-width: 1850px) {
+      .food-menu .btn-show-more {
+        margin-top: 200px;
+        border-radius: 25px;
+        background-color: #2e3034;
+        color: #eaeaeb;
+        width: 395px;
+        height: 85px;
+        outline: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        -webkit-tap-highlight-color: transparent;
+        border-radius: 40px; }
+        .food-menu .btn-show-more .text-btn-show-more {
+          font-size: 24px; } }
+    @media only screen and (min-width: 2150px) {
+      .food-menu .btn-show-more {
+        border-radius: 25px;
+        background-color: #2e3034;
+        color: #eaeaeb;
+        width: 415px;
+        height: 95px;
+        outline: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        -webkit-tap-highlight-color: transparent;
+        border-radius: 40px;
+        margin-top: 300px; } }
+    @media only screen and (max-width: 870px) {
+      .food-menu .btn-show-more {
+        margin-top: 80px; } }
+    @media only screen and (max-width: 560px) {
+      .food-menu .btn-show-more {
+        border-radius: 25px;
+        background-color: #2e3034;
+        color: #eaeaeb;
+        width: 215px;
+        height: 55px;
+        outline: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        -webkit-tap-highlight-color: transparent;
+        border-radius: 40px;
+        margin-top: 0px; }
+        .food-menu .btn-show-more .text-btn-show-more {
+          font-size: 20px; } }
 
 * {
   margin: 0;
