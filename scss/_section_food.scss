@@ -244,15 +244,25 @@
             margin-top: 300px;
         }
         @media only screen and (max-width: 870px) {
+            @include btn(315px, 55px, $font-color-black, $font-color-white);
+            border-radius: 40px; 
             margin-top: 80px;
         }
         @media only screen and (max-width: 560px) {
-            @include btn(215px, 55px, $font-color-black, $font-color-white);
+            @include btn(245px, 55px, $font-color-black, $font-color-white);
             border-radius: 40px;
-            margin-top: 0px;
+            margin-top: 2vw;
             & .text-btn-show-more {
                 font-size: 1 * $font-size-button;
             }
+        }
+        @media only screen and (max-width: 380px) {
+            & .text-btn-show-more {
+                font-size: 0.8 * $font-size-button;
+            }
+            @include btn(215px, 45px, $font-color-black, $font-color-white);
+            border-radius: 40px;
+            margin-top: 50px;
         }
     }
 }

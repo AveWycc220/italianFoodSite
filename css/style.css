@@ -651,21 +651,44 @@ table {
         margin-top: 300px; } }
     @media only screen and (max-width: 870px) {
       .food-menu .btn-show-more {
+        border-radius: 25px;
+        background-color: #2e3034;
+        color: #eaeaeb;
+        width: 315px;
+        height: 55px;
+        outline: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        -webkit-tap-highlight-color: transparent;
+        border-radius: 40px;
         margin-top: 80px; } }
     @media only screen and (max-width: 560px) {
       .food-menu .btn-show-more {
         border-radius: 25px;
         background-color: #2e3034;
         color: #eaeaeb;
-        width: 215px;
+        width: 245px;
         height: 55px;
         outline: none;
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
         -webkit-tap-highlight-color: transparent;
         border-radius: 40px;
-        margin-top: 0px; }
+        margin-top: 2vw; }
         .food-menu .btn-show-more .text-btn-show-more {
           font-size: 20px; } }
+    @media only screen and (max-width: 380px) {
+      .food-menu .btn-show-more {
+        border-radius: 25px;
+        background-color: #2e3034;
+        color: #eaeaeb;
+        width: 215px;
+        height: 45px;
+        outline: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        -webkit-tap-highlight-color: transparent;
+        border-radius: 40px;
+        margin-top: 50px; }
+        .food-menu .btn-show-more .text-btn-show-more {
+          font-size: 16px; } }
 
 * {
   margin: 0;

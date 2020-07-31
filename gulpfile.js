@@ -27,7 +27,7 @@ gulp.task('img-compress', () => {
 })
 
 gulp.task('img-resize-mobile', () => {
-    return gulp.src(['img/**', '!img/resized/**'])
+    return gulp.src(['img/**', '!img/resized/**', '!img/resized/compressed/**'])
     .pipe(imageResize({
         '**/*.jpg': {
             width: '50%',
@@ -42,7 +42,7 @@ gulp.task('img-resize-mobile', () => {
 })
 
 gulp.task('img-resize-tablet', () => {
-    return gulp.src(['img/**', '!img/resized/**'])
+    return gulp.src(['img/**', '!img/resized/**', '!img/resized/compressed/**'])
     .pipe(imageResize({
         '**/*.jpg': {
             width: '70%',
@@ -57,7 +57,7 @@ gulp.task('img-resize-tablet', () => {
 })
 
 gulp.task('img-resize-min', () => {
-    return gulp.src(['img/**', '!img/resized/**'])
+    return gulp.src(['img/**', '!img/resized/**', '!img/resized/compressed/**'])
     .pipe(imageResize({
         '**/*.jpg': {
             width: '25%',
