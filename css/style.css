@@ -143,7 +143,6 @@ table {
     color: #2e3034;
     width: 180px;
     height: 50px;
-    outline: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     -webkit-tap-highlight-color: transparent; }
     .menu .search-form .search-image {
@@ -238,13 +237,11 @@ table {
     color: #2e3034;
     width: 218px;
     height: 47px;
-    outline: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     -webkit-tap-highlight-color: transparent;
     margin-top: 60px;
     margin-left: 100px;
     border: none;
-    outline: none;
     user-select: none; }
     @media only screen and (min-width: 1850px) {
       .left-bottom-header .btn-read-more {
@@ -253,7 +250,6 @@ table {
         color: #2e3034;
         width: 228px;
         height: 57px;
-        outline: none;
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
         -webkit-tap-highlight-color: transparent;
         margin-top: 20px; } }
@@ -347,7 +343,7 @@ table {
           height: 31.7vw; } }
     @media only screen and (max-width: 870px) {
       .right-bottom-header .img-plate {
-        right: -93.93939%; } }
+        left: 0%; } }
     @media only screen and (max-width: 570px) {
       .right-bottom-header .img-plate {
         display: none; } }
@@ -367,7 +363,7 @@ table {
         top: 46.84685%; } }
     @media only screen and (max-width: 870px) {
       .right-bottom-header .img-sauce {
-        right: -9.09091%;
+        left: 0%;
         top: 42.34234%; } }
     @media only screen and (max-width: 570px) {
       .right-bottom-header .img-sauce {
@@ -443,11 +439,13 @@ table {
         font-size: 2.5vw; } }
     @media only screen and (max-width: 870px) {
       .food-menu .subtitle {
-        width: 90%; }
+        width: 90%;
+        padding-right: 5%; }
         .food-menu .subtitle .text-subtitle {
           font-size: 3.75vw; } }
     @media only screen and (max-width: 560px) {
       .food-menu .subtitle {
+        padding-right: 5%;
         width: 90%; }
         .food-menu .subtitle .text-subtitle {
           font-size: 5.875vw; } }
@@ -519,31 +517,34 @@ table {
     @media only screen and (max-width: 870px) {
       .food-menu .food-plates {
         margin-right: 0px;
-        padding-right: 20px;
         flex-direction: column;
         align-items: center; }
         .food-menu .food-plates .plate-1 {
           padding: 0;
+          padding-right: 9vw;
           width: 41.66667%;
-          height: 570px; }
+          height: 580px; }
           .food-menu .food-plates .plate-1 .img-plate {
             width: 123.07692%;
             height: 46.5vw; }
         .food-menu .food-plates .plate-2 {
           padding: 0;
+          padding-right: 9vw;
           width: 41.66667%;
-          height: 570px; }
+          height: 580px; }
           .food-menu .food-plates .plate-2 .img-plate {
             width: 123.07692%;
             height: 46.5vw; }
         .food-menu .food-plates .plate-3 {
           padding: 0;
+          padding-right: 9vw;
           width: 41.66667%;
-          height: 570px; }
+          height: 580px; }
           .food-menu .food-plates .plate-3 .img-plate {
             width: 123.07692%;
             height: 46.5vw; }
         .food-menu .food-plates .plate-title {
+          padding-top: 30px;
           font-size: 4.5vw; }
         .food-menu .food-plates .plate-text {
           font-size: 3.15vw; } }
@@ -560,26 +561,30 @@ table {
         align-items: center; }
         .food-menu .food-plates .plate-1 {
           width: 76.38889%;
-          height: 100vw; }
+          height: 100vw;
+          padding-right: 0vw; }
           .food-menu .food-plates .plate-1 .img-plate {
             margin-left: 3vw;
             width: 76.38889%;
             height: 57vw; }
         .food-menu .food-plates .plate-2 {
           width: 76.38889%;
-          height: 100vw; }
+          height: 100vw;
+          padding-right: 0vw; }
           .food-menu .food-plates .plate-2 .img-plate {
             margin-left: 3vw;
             width: 76.38889%;
             height: 57vw; }
         .food-menu .food-plates .plate-3 {
           width: 76.38889%;
-          height: 100vw; }
+          height: 100vw;
+          padding-right: 0vw; }
           .food-menu .food-plates .plate-3 .img-plate {
             margin-left: 3vw;
             width: 76.38889%;
             height: 57vw; }
         .food-menu .food-plates .plate-title {
+          padding-top: 20px;
           font-size: 7.05vw; }
         .food-menu .food-plates .plate-text {
           font-size: 4.935vw; } }
@@ -592,12 +597,10 @@ table {
     color: #eaeaeb;
     width: 335px;
     height: 75px;
-    outline: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     -webkit-tap-highlight-color: transparent;
     border-radius: 40px;
     border: none;
-    outline: none;
     user-select: none;
     margin-top: 25px; }
     @media only screen and (min-width: 1025px) {
@@ -632,7 +635,6 @@ table {
         color: #eaeaeb;
         width: 395px;
         height: 85px;
-        outline: none;
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
         -webkit-tap-highlight-color: transparent;
         border-radius: 40px; }
@@ -645,7 +647,6 @@ table {
         color: #eaeaeb;
         width: 415px;
         height: 95px;
-        outline: none;
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
         -webkit-tap-highlight-color: transparent;
         border-radius: 40px;
@@ -657,7 +658,6 @@ table {
         color: #eaeaeb;
         width: 315px;
         height: 55px;
-        outline: none;
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
         -webkit-tap-highlight-color: transparent;
         border-radius: 40px;
@@ -669,7 +669,6 @@ table {
         color: #eaeaeb;
         width: 245px;
         height: 55px;
-        outline: none;
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
         -webkit-tap-highlight-color: transparent;
         border-radius: 40px;
@@ -683,7 +682,6 @@ table {
         color: #eaeaeb;
         width: 215px;
         height: 45px;
-        outline: none;
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
         -webkit-tap-highlight-color: transparent;
         border-radius: 40px;
@@ -694,8 +692,5 @@ table {
 * {
   margin: 0;
   color: #eaeaeb; }
-
-a {
-  outline: none; }
 
 /*# sourceMappingURL=style.css.map */

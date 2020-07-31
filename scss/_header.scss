@@ -146,7 +146,6 @@
         margin-top: 60px;
         margin-left: 100px;
         border: none;
-        outline: none;  
         user-select: none;
 
         @include btn_used_darken($font-color-white);
@@ -239,7 +238,7 @@
             right: 70px / 760px * 100%;
         }
         @media only screen and (max-width: 870px) {
-            right: -310px / 330px * 100%;
+            left: 0px / 330px * 100%;
         }
         @media only screen and (max-width: 570px) {
             display: none;
@@ -264,7 +263,7 @@
             top: 520px / 1110px * 100%;
         }
         @media only screen and (max-width: 870px) {
-            right: -30px / 330px * 100%;
+            left: 0px / 330px * 100%;
             top: 470px / 1110px * 100%;
         }
         @media only screen and (max-width: 570px) {

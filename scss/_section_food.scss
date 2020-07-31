@@ -68,12 +68,13 @@
         }
         @media only screen and (max-width: 870px) {
             width: 90%;
+            padding-right: 5%;
             & .text-subtitle {
                 font-size: 2.5 * $font-size-tablet;
             }
         }
         @media only screen and (max-width: 560px) {
-            //padding-right: 9%;
+            padding-right: 5%;
             width: 90%;
             & .text-subtitle {
                 font-size: 2.5 * $font-size-mobile-small;
@@ -152,14 +153,14 @@
         }
         @media only screen and (max-width: 870px) {
             margin-right: 0px;
-            padding-right: 20px;
             flex-direction: column;
             align-items: center;
             @for $i from 1 through 3 {
                 & .plate-#{$i} {
                     padding: 0;
+                    padding-right: 9vw;
                     width: 600px / 1440px * 100%;
-                    height: 570px;
+                    height: 580px;
                     & .img-plate {
                         width: 400px / 325px * 100%;
                         height: 46.5vw;
@@ -167,6 +168,7 @@
                 }
             }
             & .plate-title {
+                padding-top: 30px;
                 font-size: 3 * $font-size-tablet;
             }
             & .plate-text {
@@ -187,6 +189,7 @@
                 & .plate-#{$i} {
                     width: 1100px / 1440px * 100%;
                     height: 100vw;
+                    padding-right: 0vw;
                     & .img-plate {
                         margin-left: 3vw;
                         width: 1100px / 1440px * 100%;
@@ -195,6 +198,7 @@
                 }
             }
             & .plate-title {
+                padding-top: 20px;
                 font-size: 3 * $font-size-mobile-small;
             }
             & .plate-text {
@@ -210,7 +214,6 @@
         @include btn(335px, 75px, $font-color-black, $font-color-white);
         border-radius: 40px;
         border: none;
-        outline: none;  
         user-select: none;
         margin-top: 25px;
 
